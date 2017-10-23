@@ -1,0 +1,262 @@
+/* general */
+html{
+  font-size: 14px;
+}
+.container{
+  max-width: 960px; 
+}
+/*header*/
+header{
+	background-color: #104fac;	
+	color: #fff;
+}
+a, img,.card-img-overlay:after{
+  transition: all .3s linear;  
+}
+#three-bars:hover{
+  fill: #ccc;
+}
+.nav-pills .nav-link {
+  border-radius: 0;
+}
+.nav a{
+	color: #fff;
+}
+.nav a:hover{
+	color: #0056b3;
+   background-color: #fff; 
+}
+.category a:hover{
+  color: #000;
+  text-decoration: none;
+}
+.logo{
+  width: 150px;
+  margin-top: 20px;
+  height: 70px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.slogan{
+	width: 80%;
+  padding-top: 22px;
+  margin-left: 20px;
+  font-weight: 300;
+  height: 90px;
+  background-color: #1463d5;
+  z-index: 2;
+  position: relative;
+}
+.transformed{
+  height:90px;
+  width: 45px;
+  transform: skewX(15deg);
+  background-color: #1463d5;
+}
+.layout{
+	position: absolute;
+  right: 0;
+  width: 50%;
+  height: 90px;
+  background-color: #1463d5;
+}
+.menu_button{
+  display: none;
+}
+/* content */
+.attention{
+  margin-top: 30px;
+}
+.attention__title{
+  color: #104fac;
+  font-weight: 500;
+}
+.attention ul{
+  list-style: none;
+  padding-left: 0;
+}
+.card{
+  margin: 15px 0;
+  border: none;
+}
+.card-img-top,.card-img, .media img {
+  border-top-left-radius: .000001;
+  border-top-right-radius: .000001;
+}
+
+.card-img-overlay:after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 160px;
+  width: 100%;
+  border-image: linear-gradient(#000, rgba(0,0,0, 1) 95%) 1;
+  background: linear-gradient(#000, rgba(0,0,0, 0) 95%) content-box;
+  transform: rotate(180deg);
+}
+.card-img-overlay{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.similar_themes a:hover{
+  color: #fff;
+}
+.card-deck img:hover,
+.card-deck:hover .card-img-overlay:after{
+  opacity: 0.5;
+}
+.card-img-overlay > * {
+  z-index: 999;
+  position: relative;
+}
+.item_link{
+  color: inherit;
+}
+
+.item_link:hover{
+  opacity: .9
+  color: inherit;
+  text-decoration: none;
+}
+.item_link--lead:hover{
+  color: #fff;
+}
+.item_link--lead:hover img{
+  opacity: .8
+}
+.category{
+  font-weight: 700;
+  color: #1463d5;
+
+}
+.single_container .container{
+  max-width: 800px;
+}
+.blockquote{
+  font-size: 1.5rem;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  padding: 10px 0;
+}
+.similar_themes {
+  font-size: .8em;
+}
+.similar_themes h4{
+  font-size: 1.5em;
+}
+.similar_themes hr {
+  margin-top: 0;
+   margin-bottom: 0; 
+  border: 0;
+  border-top: 1px solid rgba(255,255,255,0.5);
+  color: #fff;
+}
+.page_content img{
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+/* footer */
+.footer{
+  background-color: #1463d5;
+}
+.footer p{
+  padding: 15px;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .layout, .transformed{
+    display: none;
+  }
+  .logo{
+    background-position: left;
+  }
+  .slogan{
+    margin: 10px 0 0;
+    width: 100%;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    background-color: inherit;  
+  }
+  .slogan p{
+    margin-bottom: 0;
+  }
+  .menu_button{
+    display: flex;
+    flex: 0 0 50%;
+  }
+  .nav-item{
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+  .lead_news {
+    font-size: 0.9rem;
+  }
+  .lead_news h1, h1{
+    font-size: 2rem;
+  }
+
+}
+@media screen and (max-width: 600px) {
+  .media{
+    flex-direction: column;
+    align-items: center;
+  }
+  .media img{
+    width: 100%;
+    margin: 10px auto;
+  }
+
+}
+@media screen and (max-width: 360px) {
+  .slogan{
+    padding: 10px 0;
+  }
+  .media{
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+
+.media-hover {
+  position: relative;
+}
+.media-hover::before {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  content: '';
+  width: 50%;
+  height: 100%;
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+}
+.media:hover .media-hover::before {
+  -webkit-animation: shine .75s;
+  animation: shine .75s;
+}
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
