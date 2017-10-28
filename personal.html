@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+
+	<title>Настоящий репортаж</title>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="row logo_slogan__container">
+				<div class="col-md-2 col-sm-6 col-6">
+					<div class="logo" style="background-image: url(images/logo.png);"></div>
+				</div>
+				<div class="col-6 menu_button justify-content-end">
+					<div id="menu_button"><img src="images/three-bars.svg" alt=""></div>
+				</div>
+				<div class="col-md-7 col-12">
+					<div class="slogan">
+						<p>Настоящий репортаж — сообщение с места событий. Жанр журналистики и фотографии, спецификой которого числят оперативность.</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-12">
+						<p class="question__title">Как Вы сегодня ощущвете настроение города?</p>
+						<div class="question__range">
+							<input type="range" name="mood" id="mood" />
+						</div>
+						<div class="question__caption">
+							194 человека проголосовало
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="nav-container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<span class="navbar-toggler-icon"></span>
+						<ul class="nav" id="main_nav">
+						  <li class="nav-item">
+							  <a class="nav-link" href="#">Публикации</a>
+							</li>   
+							<li class="nav-item">
+							  <a class="nav-link" href="#">Обучение</a>
+							</li> 
+							<li class="nav-item">
+							  <a class="nav-link" href="#">Игры</a>
+							</li>  
+							<li class="nav-item">
+							  <a class="nav-link" href="#">О нас</a>
+						</li>				
+					</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="personal">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 mt-5">
+					<h1>Антон Иванов</h1>
+		    </div>
+	    </div>
+    </div>
+	    	<div class="personal__data  mb-5">
+		<div class="container">
+	    	<dl class="row mt-3">
+		    	<dt class="col-sm-2">Мой город</dt>
+				  <dd class="col-sm-10">
+				  	<p>Рязань</p>
+				  </dd>
+				  <dt class="col-sm-2 user_email_caption">Мой email</dt>
+				  <dd class="col-sm-3">
+				  	<div class="user_email">
+				  		<input type="email" name="email" id="email" value="aivan@mail.ru" class="form-control" disabled />
+				  		<input type="image" src="images/pencil.svg" alt="" class="edit_icon" id="edit_email">
+				  		&nbsp;<span class="message small"></span>
+				  	</div>
+				  </dd>
+		    </dl>
+    	</div>
+    	</div>
+		<div class="container">
+
+	    <div class="personal__games">
+	    	<h3 class="mb-3">Мои игры</h3>
+	    	<table class="table table-striped table-hover mb-5">
+	    		<caption id="finished_games" data-toggle="collapse" href="#finished_games_container" aria-expanded="false" aria-controls="finished_games_container">Показать завершившиеся игры</caption>
+				  <thead>
+				    <tr>
+				      <th scope="col">#</th>
+				      <th scope="col">Название</th>
+				      <th scope="col">Дедлайн</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <th scope="row">1</th>
+				      <td>Mark</td>
+				      <td>Otto</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">2</th>
+				      <td>Jacob</td>
+				      <td>Thornton</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">3</th>
+				      <td>Larry</td>
+				      <td>the Bird</td>
+				    </tr>
+				  </tbody>
+				</table>
+				<div class="collapse" id="finished_games_container">
+			    <table class="table table-striped table-hover">
+			    	<thead>
+				    <tr>
+				      <th scope="col">#</th>
+				      <th scope="col">Название</th>
+				      <th scope="col">Дедлайн</th>
+				    </tr>
+				  </thead>
+					  <tbody>
+					    <tr>
+					      <th scope="row">4</th>
+					      <td>Mark</td>
+					      <td>Otto</td>
+					    </tr>
+					    <tr>
+					      <th scope="row">5</th>
+					      <td>Jacob</td>
+					      <td>Thornton</td>
+					    </tr>
+					    <tr>
+					      <th scope="row">6</th>
+					      <td>Larry</td>
+					      <td>the Bird</td>
+					    </tr>
+					  </tbody>
+					</table>
+				</div>
+	    </div>
+  		<div class="row">
+		    <div class="col-12">
+	    	<h3 class="mb-3">Мои курсы</h3>
+		    	<ul class="list-unstyled  mt-4">
+					  	<a href="#" class="item_link">
+							  <li class="media mb-3">
+							    <div class="media-hover">
+								    <img class="mr-3" src="images/item_pic.jpg" alt="Generic placeholder image">
+							  	</div>
+								    <div class="media-body">
+								      <h5 class="mt-0 mb-1">Последний из выживших заголовков</h5>
+								     Как написать лид, если материала еще не существует, и нужно ли.Как написать лид, если материала еще не существует, и нужно ли.Как написать лид, если материала еще не существует, и нужно ли
+								    </div>
+							  </li>
+						  </a>
+						  <a href="#" class="item_link">
+							  <li class="media mb-3">
+							  	<div class="media-hover">
+								    <img class="mr-3" src="images/item_pic.jpg" alt="Generic placeholder image">
+							  	</div>
+								    <div class="media-body">
+								      <h5 class="mt-0 mb-1">Последний из выживших заголовков</h5>
+								     Как написать лид, если материала еще не существует, и нужно ли.Как написать лид, если материала еще не существует, и нужно ли.Как написать лид, если материала еще не существует, и нужно ли
+								    </div>
+							  </li>
+						  </a>
+						  <a href="#" class="item_link">
+							  <li class="media mb-3">
+								    <div class="media-hover">
+								    <img class="mr-3" src="images/item_pic.jpg" alt="Generic placeholder image">
+							  	</div>
+								    <div class="media-body">
+								      <h5 class="mt-0 mb-1">Последний из выживших заголовков</h5>
+								     Как написать лид, если материала еще не существует, и нужно ли.Как написать лид, если материала еще не существует, и нужно ли.Как написать лид, если материала еще не существует, и нужно ли
+								    </div>
+							  </li>
+						  </a>
+					</ul>
+		    </div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<p class="all_courses text-center">
+						<a href="#"><u>Все курсы настоящего репортажа</u></a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	
+	<footer class="footer">
+		<p class="copyright">© «Настоящий репортаж» 2017</p>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

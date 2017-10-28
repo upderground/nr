@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/timeline.css" />
+
+	<title>Настоящий репортаж</title>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="row logo_slogan__container">
+				<div class="col-md-2 col-sm-6 col-6">
+					<a href="index.html"><div class="logo" style="background-image: url(images/logo.png);"></div></a>
+				</div>
+				<div class="col-6 menu_button justify-content-end">
+					<div id="menu_button"><img src="images/three-bars.svg" alt=""></div>
+				</div>
+				<div class="col-md-7 col-12">
+					<div class="slogan">
+						<p>Настоящий репортаж — сообщение с места событий. Жанр журналистики и фотографии, спецификой которого числят оперативность.</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-12">
+						<p class="question__title">Как Вы сегодня ощущвете настроение города?</p>
+						<div class="question__range">
+							<input type="range" name="mood" id="mood" />
+						</div>
+						<div class="question__caption">
+							194 человека проголосовало
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="nav-container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<span class="navbar-toggler-icon"></span>
+						<ul class="nav" id="main_nav">
+						  <li class="nav-item">
+							  <a class="nav-link" href="#">Публикации</a>
+							</li>   
+							<li class="nav-item">
+							  <a class="nav-link" href="#">Обучение</a>
+							</li> 
+							<li class="nav-item">
+							  <a class="nav-link" href="#">Игра</a>
+							</li>  
+							<li class="nav-item">
+							  <a class="nav-link" href="#">О нас</a>
+						</li>				
+					</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="container game__head mt-5">
+		<div class="row">
+			<div class="col-12">
+				<h1>Сейчас идёт игра «Неожиданное рядом»</h1>
+			</div>
+			<div class="col-12">
+				<div class="timer mt-3"> 
+					<h3>До окончания осталось:
+					  <span id="days"></span> дней
+					  <span id="delimiter"> </span>
+					  <span id="hours"></span>
+					  <span id="delimiter">:</span>
+					  <span id="minutes"></span>
+					  <span id="delimiter">:</span>
+					  <span id="seconds"></span>
+				  </h3> 
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="cd-horizontal-timeline">
+	<div class="timeline">
+		<div class="events-wrapper">
+			<div class="events">
+				<ol>
+					<li><a href="#0" data-date="16/01/2014" class="selected">Обсуждение</a></li>
+					<li><a href="#0" data-date="28/02/2014">Выход в поле</a></li>
+					<li><a href="#0" data-date="20/04/2014">Редактура</a></li>
+					<li><a href="#0" data-date="20/05/2014">Дополнительное обсуждение</a></li>
+					<li><a href="#0" data-date="09/07/2014">Презентация</a></li>
+					<li><a href="#0" data-date="29/07/2014">Финал</a></li>
+				</ol>
+
+				<span class="filling-line" aria-hidden="true"></span>
+			</div> <!-- .events -->
+		</div> <!-- .events-wrapper -->
+			
+		<ul class="cd-timeline-navigation">
+			<li><a href="#0" class="prev inactive">Назад</a></li>
+			<li><a href="#0" class="next">Вперед</a></li>
+		</ul> <!-- .cd-timeline-navigation -->
+	</div> <!-- .timeline -->
+
+	<div class="container events-content">
+		<div class="row">
+			<div class="col-12">
+				<ol>
+					<li class="selected" data-date="16/01/2014">
+						<h2>Превью новостей в виде кнопок</h2>
+						<p class="blockquote-footer">"16" марта, 2017</p>
+						<p>	
+							Иногда на сайте необходимо отобразить фрагмент новости, чтобы заинтересовать посетителя прочесть ее. Обычно такую информацию подают в виде блоков, которые расположены под прочитанной новостью или в сайдбаре, но в данном уроке мы рассмотрим немного иной подход к поставленной задаче.
+						</p>
+						<video src="https://www.youtube.com/embed/XGSy3_Czz8k" controls poster="images/main_pic.jpg"></video>
+						<p>
+						Иногда на сайте необходимо отобразить фрагмент новости, чтобы заинтересовать посетителя протяженииочесть ее. Обычно такую информацию подают в виде блоков. 
+						</p>
+					</li>
+
+					<li data-date="28/02/2014">
+						<h2>Дизайн радио</h2>
+						<p class="blockquote-footer">"20" апреля 2017</p>
+						<p>	
+							На протяжении всего времени, что мы занимаемся веб дизайном, мы сталкивались с различными взглядами на дизайн, проектами и требованиям к дизайну. Недавно нас просили показать и сделать набросок макета дизайна радио-проигрывателя для сайта.
+						</p>
+						<video src="https://www.youtube.com/embed/XGSy3_Czz8k" controls poster="images/main_pic.jpg"></video>
+						<p>
+						Иногда на сайте необходимо отобразить фрагмент новости, чтобы заинтересовать посетителя протяженииочесть ее. Обычно такую информацию подают в виде блоков. 
+						</p>
+					</li>
+
+					<li data-date="20/04/2014">
+						<h2>Создаем слайдер</h2>
+						<p class="blockquote-footer">"20" мая 2017</p>
+						<p>	
+							На прошлой неделе мы экспериментировали с SVG анимированием содержания и сделали слайдер во всю страницу с интересными переходами. Сегодня мы используем ту же технику, чтобы создать адаптивный слайдер контента. На этот раз мы использовали SVG, чтобы непосредственно обрезать слайды изображения, чтобы показать промежуточный слой при перелистывании.
+						</p>
+						<video src="https://www.youtube.com/embed/XGSy3_Czz8k" controls poster="images/main_pic.jpg"></video>
+						<p>
+						Иногда на сайте необходимо отобразить фрагмент новости, чтобы заинтересовать посетителя протяженииочесть ее. Обычно такую информацию подают в виде блоков. 
+						</p>
+					</li>
+
+					<li data-date="20/05/2014">
+						<h2>Анимированный футер</h2>
+						<p class="blockquote-footer">"09" июня 2017</p>
+						<p>	
+							Создавая хороший сайт не стоит забывать о деталях, каждый элемент должен быть продуман и подогнан к деталям и цветовой палитре. В сегодняшнем уроке мы рассмотрим как создать замечательный, анимированный подвал для сайта который будет отзывчивым для посетителя и адаптивным при просмотре. 
+						</p>
+						<video src="https://www.youtube.com/embed/XGSy3_Czz8k" controls poster="images/main_pic.jpg"></video>
+						<p>
+						Иногда на сайте необходимо отобразить фрагмент новости, чтобы заинтересовать посетителя протяженииочесть ее. Обычно такую информацию подают в виде блоков. 
+						</p>
+					</li>
+
+					<li data-date="09/07/2014">
+						<h2>Превью новостей в виде кнопок</h2>
+						<p class="blockquote-footer">"30" августа, 2017</p>
+						<p>	
+							Иногда на сайте необходимо отобразить фрагмент новости, чтобы заинтересовать посетителя прочесть ее. Обычно такую информацию подают в виде блоков, которые расположены под прочитанной новостью или в сайдбаре, но в данном уроке мы рассмотрим немного иной подход к поставленной задаче.
+						</p>
+						<video src="https://www.youtube.com/embed/XGSy3_Czz8k" controls poster="images/main_pic.jpg"></video>
+						<p>
+						Иногда на сайте необходимо отобразить фрагмент новости, чтобы заинтересовать посетителя протяженииочесть ее. Обычно такую информацию подают в виде блоков. 
+						</p>
+					</li>
+
+					<li data-date="30/08/2014">
+						<h2>Дизайн радио</h2>
+						<p class="blockquote-footer">"20" апреля 2017</p>
+						<p>	
+							На протяжении всего времени, что мы занимаемся веб дизайном, мы сталкивались с различными взглядами на дизайн, проектами и требованиям к дизайну. Недавно нас просили показать и сделать набросок макета дизайна радио-проигрывателя для сайта.
+						</p>
+						<video src="https://www.youtube.com/embed/XGSy3_Czz8k" controls poster="images/main_pic.jpg"></video>
+						<p>
+						Иногда на сайте необходимо отобразить фрагмент новости, чтобы заинтересовать посетителя протяженииочесть ее. Обычно такую информацию подают в виде блоков. 
+						</p>
+					</li>
+
+					<li data-date="15/09/2014">
+						<h2>Создаем слайдер</h2>
+						<p class="blockquote-footer">"15" сентября 2017</p>
+						<p>	
+							На прошлой неделе мы экспериментировали с SVG анимированием содержания и сделали слайдер во всю страницу с интересными переходами. Сегодня мы используем ту же технику, чтобы создать адаптивный слайдер контента. На этот раз мы использовали SVG, чтобы непосредственно обрезать слайды изображения, чтобы показать промежуточный слой при перелистывании.
+						</p>
+						<video src="https://www.youtube.com/embed/XGSy3_Czz8k" controls poster="images/main_pic.jpg"></video>
+						<p>
+						Иногда на сайте необходимо отобразить фрагмент новости, чтобы заинтересовать посетителя протяженииочесть ее. Обычно такую информацию подают в виде блоков. 
+						</p>
+					</li>
+
+					<li data-date="01/11/2014">
+						<h2>Превью новостей в виде кнопок</h2>
+						<p class="blockquote-footer">"01" октября 2017</p>
+						<p>	
+							Иногда на сайте необходимо отобразить фрагмент новости, чтобы заинтересовать посетителя прочесть ее. Обычно такую информацию подают в виде блоков, которые расположены под прочитанной новостью или в сайдбаре, но в данном уроке мы рассмотрим немного иной подход к поставленной задаче.
+						</p>
+						<video src="https://www.youtube.com/embed/XGSy3_Czz8k" controls poster="images/main_pic.jpg"></video>
+						<p>
+						Иногда на сайте необходимо отобразить фрагмент новости, чтобы заинтересовать посетителя протяженииочесть ее. Обычно такую информацию подают в виде блоков. 
+						</p>
+					</li>
+
+					<li data-date="10/12/2014">
+						<h2>Дизайн радио</h2>
+						<p class="blockquote-footer">"10" октября 2017</p>
+						<p>	
+							На протяжении всего времени, что мы занимаемся веб дизайном, мы сталкивались с различными взглядами на дизайн, проектами и требованиям к дизайну. Недавно нас просили показать и сделать набросок макета дизайна радио-проигрывателя для сайта.
+						</p>
+						<video src="https://www.youtube.com/embed/XGSy3_Czz8k" controls poster="images/main_pic.jpg"></video>
+						<p>
+						Иногда на сайте необходимо отобразить фрагмент новости, чтобы заинтересовать посетителя протяженииочесть ее. Обычно такую информацию подают в виде блоков. 
+						</p>
+					</li>
+
+					<li data-date="19/01/2017">
+						<h2>Создаем слайдер</h2>
+						<p class="blockquote-footer">"29" ноября 2017</p>
+						<p>	
+							На прошлой неделе мы экспериментировали с SVG анимированием содержания и сделали слайдер во всю страницу с интересными переходами. Сегодня мы используем ту же технику, чтобы создать адаптивный слайдер контента. На этот раз мы использовали SVG, чтобы непосредственно обрезать слайды изображения, чтобы показать промежуточный слой при перелистывании.
+						</p>
+						<video src="https://www.youtube.com/embed/XGSy3_Czz8k" controls poster="images/main_pic.jpg"></video>
+						<p>
+						Иногда на сайте необходимо отобразить фрагмент новости, чтобы заинтересовать посетителя протяженииочесть ее. Обычно такую информацию подают в виде блоков. 
+						</p>
+					</li>
+
+					<li data-date="03/03/2017">
+						<h2>Превью новостей в виде кнопок</h2>
+						<p class="blockquote-footer">"03"  декабря, 2017</p>
+						<p>	
+							Иногда на сайте необходимо отобразить фрагмент новости, чтобы заинтересовать посетителя прочесть ее. Обычно такую информацию подают в виде блоков, которые расположены под прочитанной новостью или в сайдбаре, но в данном уроке мы рассмотрим немного иной подход к поставленной задаче.
+						</p>
+						<video src="https://www.youtube.com/embed/XGSy3_Czz8k" controls poster="images/main_pic.jpg"></video>
+						<p>
+						Иногда на сайте необходимо отобразить фрагмент новости, чтобы заинтересовать посетителя протяженииочесть ее. Обычно такую информацию подают в виде блоков. 
+						</p>
+					</li>
+					<li data-date="29/09/2017">
+						<h2>Превью новостей в виде кнопок</h2>
+						<p class="blockquote-footer">"03"  декабря, 2017</p>
+						<p>	
+							Иногда на сайте необходимо отобразить фрагмент новости, чтобы заинтересовать посетителя прочесть ее. Обычно такую информацию подают в виде блоков, которые расположены под прочитанной новостью или в сайдбаре, но в данном уроке мы рассмотрим немного иной подход к поставленной задаче.
+						</p>
+						<video src="https://www.youtube.com/embed/XGSy3_Czz8k" controls poster="images/main_pic.jpg"></video>
+						<p>
+						Иногда на сайте необходимо отобразить фрагмент новости, чтобы заинтересовать посетителя протяженииочесть ее. Обычно такую информацию подают в виде блоков. 
+						</p>
+					</li>
+				</ol>
+			</div>
+		</div>
+		
+	</div> <!-- .events-content -->
+</section>
+	<footer class="footer">
+		<p class="copyright">© «Настоящий репортаж» 2017</p>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+  <script src="js/timeline.js"></script>
+  <script src="js/timer.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
