@@ -11,6 +11,25 @@ $(function() {
 		$('#main_nav').slideToggle();
 	});
 
+	$('#mood').change(function(){
+		//отправка настроения на сервер
+		/*$.post('/path/to/server', {mood: $(this).val()}, function(data){
+			//callback here
+		});*/
+	});
+
+	$('#edit_email').click(function(){
+		$('#email').removeAttr('disabled').focus();
+	});
+
+	$('#email').change(function(){
+		//отправка нового email на сервер
+		$('.message').text('email изменен!');
+		/*$.post('/path/to/server', {email: $(this).val()}, function(data){
+			//callback here
+		});*/
+	});
+
 });
 
 function adaptiveMenu(window_width){
